@@ -83,7 +83,7 @@ jobs:
             pip install .[test]
 
         - name: Run Tests
-          run: pytest tests/test_integration.py::test_compile_using_cli -m "not fuzzing"
+          run: pytest tests/test_integration.py::test_compile_using_cli -vvv
 
     # fuzzing:
     #     runs-on: ubuntu-latest
