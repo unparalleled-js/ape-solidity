@@ -19,7 +19,7 @@ def test_compile_using_cli(ape_cli, runner):
     pdir  = ape.config.DATA_FOLDER / 'packages'
     debug_str = f"\nData folder: {ape.config.DATA_FOLDER}\n"
     debug_str += f"Packages folder exists: {pdir.is_dir()}\n"
-    debug_str += f"Packages contents: {' '.join([x for x in pdir.itedir()])}"
+    debug_str += f"Packages contents: {' '.join([x for x in pdir.iterdir()])}"
 
     #debug_str += f"OZ exists: {(ape.config.DATA_FOLDER / 'packages' / 'OpenZeppelin').is_dir()}\n"
     # debug_str += f"{' '.join([x for x in (ape.config.DATA_FOLDER / 'packages' / 'OpenZeppelin').iterdir()])}\n"
